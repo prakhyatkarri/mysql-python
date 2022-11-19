@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+    db:
+        image: mysql:8
+        restart: always
+        environment:
+          MYSQL_USER: great
+          MYSQL_ROOT_PASSWORD: scott
+          MYSQL_DATABASE: products
+        ports:
+          - 3306:3306
+        
